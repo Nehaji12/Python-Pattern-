@@ -58,7 +58,7 @@ The quotation marks are important: "__main__" is a string. Writing print_patt() 
 '''
 
 
-def print_pattern(n): 
+def print_pattern_A(n): 
 
     for i in range(n): 
 
@@ -71,6 +71,7 @@ def print_pattern(n):
                 or (i == (n-1)//2 and n -1 -i < j < n -1 +i)): 
                 print("*",end = " ")
             else:
+                
                 print(" ",end = " ")
 
         print()
@@ -79,5 +80,5 @@ def print_pattern(n):
 if __name__ == "__main__":
 
     height_of_the_letter   = int(input("Enter Height of the letter   : \t"))
-    print_pattern(height_of_the_letter)
+    print_pattern_A(height_of_the_letter)
 
